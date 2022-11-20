@@ -1,0 +1,24 @@
+{
+  "name": "express-validator-recording",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.6",
+    "exphbs": "^1.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.6",
+    "express-validator": "^6.14.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.7.2",
+    "nodemon": "^2.0.20"
+  }
+}

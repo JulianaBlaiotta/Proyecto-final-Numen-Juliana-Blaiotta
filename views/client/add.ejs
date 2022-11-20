@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/client" method="POST" novalidate style="width:476px;
+                height:600px;
+                background:#fff;
+                border-radius:6px;
+                box-shadow: 0px 1px 4px rgb(183, 183, 183);
+                padding:20px 30px;
+                max-width:calc(100vw - 40px);
+                box-sizing:border-box;
+                font-family:'Montserrat',sans-serif;
+                position:relative;
+                margin-top: 48px;
+                margin-left: 30%;">
+
+            <% if(typeof alert !='undefined' ) { %>
+                <% alert.forEach(function(error) { %>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert" style="  color: #f44336;
+                background-color: #fff3cd;
+                border-color: #ffeeba;
+                font-size: 13px;">
+                        <%= error.msg %>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <% }) %>
+                        <% } %>
+                            <h1 style="margin-bottom: 40px;">Ingresar nuevo cliente</h1>
+                            <div class="form-group">
+                                <label for="username" class="form-label">Usuario</label>
+                                <input type="text" class="form-control" name="username" id="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" name="email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" name="password" id="password">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-info" style="color: #020202;
+            background: transparent;
+            border-radius: 6px;
+            margin-top: 12%;
+            display: flex;
+            justify-content: center;
+            width: 100%;"></i>Guardar</button>
+                                <a class="btn btn-secondary" style="color: #020202;
+            background: transparent;
+            border-radius: 6px;
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            width: 100%;" href="/client/list"></i> Mostrar todos</a>
+                            </div>
+        </form>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

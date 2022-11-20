@@ -1,0 +1,16 @@
+Consigna proyecto final Academia Numen:
+Desarrollar un servidor en Node que utilice rutas con sus respectivos métodos HTTP para la comunicación con la base de datos.
+Requerimientos para el servidor:
+- Contar con una base da datos propia y una cuenta MongoDB Compass (Ver la clase que creamos el Cluster)
+- Desarrollar un esquema propio y original
+- Que posea al menos cuatro rutas para conformar un Crud, de forma que cree, lea, actualice y elimine datos
+en la base de datos de MongoDB
+- Validar las rutas que sean necesarias con el uso de Express-validator
+- Desarrollar un middleware propio
+- Que contenga una ruta que se comunique con una API externa
+
+
+
+$ npm install 
+$ npm start
+ 
