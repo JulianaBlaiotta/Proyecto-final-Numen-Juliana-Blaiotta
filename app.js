@@ -12,8 +12,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 // Set Templating Enginge
-app.set('view engine', 'ejs')
 
-app.use('/', require('./router'));
+app.set('view engine', 'ejs');
+
+app.use('/', routes());
+
 
 app.listen(3000);
